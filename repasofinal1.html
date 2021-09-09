@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+.titulo{
+background: green;
+right: 35%;
+width:40%;
+height:20%;
+top:5%;
+position: absolute;
+font-size: 200%;
+z-index: 4;
+}		
+.cuadro1{
+background: black;
+right: 28%;
+width:50%;
+height:50%;
+top: 0%;
+position: absolute;
+z-index: 3;
+}
+.intro{
+background: white;
+right: 58%;
+width:10%;
+height:20%;
+top: 28%;
+position: absolute;
+font-size: 110%;
+z-index: 4;
+}
+.foto{
+background: white;
+right: 38%;
+width:10%;
+height:20%;
+top: 28%;
+position: absolute;
+z-index: 4;
+}
+.foto1{
+
+right: 10%;
+width:80%;
+height:80%;
+top: 14%;
+position: absolute;
+z-index: 4;
+}
+.f1{
+background: red;
+right: 60%;
+width:5%;
+height:10%;
+top: 48%;
+position: absolute;
+z-index: 4;
+border-radius: 100px;
+}
+.f2{
+background: red;
+right: 40%;
+width:5%;
+height:10%;
+top: 48%;
+position: absolute;
+z-index: 4;
+border-radius: 100px;
+}
+
+.cuadro3{
+background: pink;
+right: 58%;
+width:0%;
+height:0%;
+top: 60%;
+position: absolute;
+z-index: 3;
+transition: all 1s;
+}
+.cuadro4{
+background: blue;
+right: 28%;
+width:0%;
+height:0%;
+top: 60%;
+position: absolute;
+z-index: 3;
+transition:all 1s;
+
+}
+.texto1{
+display: none;
+transition: all 1s 0.5;
+
+
+
+
+}
+.cerrar{
+background: blue;
+right: 28%;
+width:0%;
+height:0%;
+top: 70%;
+position: absolute;
+z-index: 5;
+transition:all 1s;
+display: none;
+}
+	</style>
+	<title>Repaso</title>
+</head>
+<body>
+	<div class="titulo">HOLA LOLA</div>
+<div class="cuadro1"></div>
+<div class="cerrar" id="cerri" onclick="cerrador()">Cerrar</div>
+<div class="cuadro3" id="tec1"><div class="texto1" id="texty"></div></div>
+<div class="cuadro4" id="tec2"><div class="texto1" id="texti">Datos valiosos u aplicaciones?</div></div>
+<div class="f1" onclick="cuadrito1()"></div>
+<div class="f2" onclick="cuadrito2()"></div>
+<div class="intro">kdkdaslkalkfnasl<p>kkafnasnlk</div>
+<div class="foto"><img src="perros.jpg" class="foto1"></div></div>
+
+<script>
+	
+function cuadrito1()
+{
+
+tec1.style.width=20+"%";
+
+tec1.style.height=30+"%";
+
+texty.style.display="block";
+
+cerri.style.width=10+"%";
+
+cerri.style.height=10+"%";
+
+cerri.style.display="block";
+
+texty.innerHTML="que es?";
+}
+
+function  cerrador()
+{
+
+tec1.style.width=0+"%";
+
+tec1.style.height=0+"%";	
+
+texty.style.display="none";
+
+texty.innerHTML="";
+}
+
+function cuadrito2()
+{
+
+tec2.style.width=20+"%";
+
+tec2.style.height=30+"%";
+
+texti.style.display="block";
+
+texti.innerHTML="Datos valiosos u aplicaciones?";
+}
+
+
+</script>
+</body>
+</html>
